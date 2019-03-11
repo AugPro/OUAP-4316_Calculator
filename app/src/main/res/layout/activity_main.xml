@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="5"
+        android:rowCount="7"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <Button
+            android:id="@+id/times"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="*" />
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/divided_by"
+            android:layout_row="1"
+            android:layout_column="4"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/minus"
+            android:layout_row="3"
+            android:layout_column="4"
+            android:text="-" />
+
+        <EditText
+            android:id="@+id/editText_x1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="3"
+            android:ems="10"
+            android:inputType="numberSigned|number|numberDecimal"
+            android:text="0"
+            tools:text="0" />
+
+        <EditText
+            android:id="@+id/editText_x2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:ems="10"
+            android:inputType="numberSigned|number|numberDecimal"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/textView_operation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:text=""
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView_equals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:text="="
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/textView_Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="6"
+            android:layout_column="3"
+            android:layout_gravity="center"
+            android:text="Y"
+            android:textSize="20dp" />
+
+    </GridLayout>
+
+
+</android.support.constraint.ConstraintLayout>
